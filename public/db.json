@@ -1,0 +1,47 @@
+{"OurMemories": [{
+  "id":1,
+  "Image": "https://celebrantspain.es/wp-content/uploads/2020/05/David-Luque-photographer-Spanish-wedding-vows-with-Celebrant.jpg",
+  "location":"Hyderabad",
+  "year":"2005",
+  "occasion":"friends mariage",
+  "names":["sam","rahul","vikas"]
+
+},
+{
+  "id":2,
+  "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPu_uvmRr5l7TVl6ImHGZeNoGT34LnHL7DZEoLHWnfiA&s",
+  "relation":"best friends",
+  "location":"goa",
+  "year":"2003",
+  "occasion":"goa tour",
+  "names":["amul","deepthi","max"]
+},
+{
+  "id":3,
+  "Image": "https://www.uopeople.edu/wp-content/uploads/bb-plugin/cache/High-School-Friends-vs-College-Friends-The-Ones-Who-Stick-With-You-landscape-2edf8fd9503eb5e9e955782bf4a182c7-n5mwvo4a7kez.jpg",
+  "relation":"school friends",
+  "location":"Hyderabad",
+  "year":"2010",
+  "occasion":"get together",
+  "names":["munal","sam","suresh"]
+
+},
+{
+  "id":4,
+  "Image": "https://i.ytimg.com/vi/Wov-BxLWAkE/maxresdefault.jpg",
+  "relation":"friends",
+  "location":"poundichery",
+  "year":"2011",
+  "occasion":"meeting friends",
+  "names":["sathivk","bhanu","sumanth"]
+
+},
+{
+  "id":5,
+  "Image": "https://freedphoto.com/wp-content/uploads/05_Freed_FamilyPortraits-1536x1024.png",
+  "relation":"family",
+  "location":"Vijayawada",
+  "year":"2015",
+  "occasion":"family",
+  "names":["koti","padma","sruthi"]
+}]}

@@ -1,0 +1,17 @@
+{
+  "name": "myfirstproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jsonbackend": "npx json-server --watch -p 2919 db.json",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
+    "mongodb": "^6.5.0",
+    "nodemon": "^3.1.0"
+  }
+}

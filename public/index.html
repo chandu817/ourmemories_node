@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+         :root{
+          --main-radius:px;
+          --main-padding: 30px;
+      }
+      .container{
+          display: grid;
+          grid-template-rows: 0.1fr 1fr 0.5fr 2fr 2.5fr 2.5fr 1.5fr 0.09fr 0.2fr;
+      
+          grid-template-areas:
+          "nav nav nav nav"
+          "home home home home"
+          "about about about about"
+          "certifications certifications certifications certifications"
+          "Experience Experience Experience Experience"
+          "project project project project"
+          "blog blog blog blog"
+          "contact contact contact contact"
+          "footer footer footer footer";
+         
+          
+      }
+      nav{
+          height:5vh;
+          background-color: white;
+          overflow: hidden;
+          grid-area: nav;
+          padding: var(--main-padding);
+      
+      }
+      .logo {
+         float: left;
+         padding: 10px;
+         font-size: 25px;
+         color: black;
+         font-weight: 600;
+        }
+        nav .menu {
+            float: right;
+        }
+        nav .menu li {
+          float: left;
+        }
+        nav .menu li a {
+           display: block;
+           color: #ff598d;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+        }
+        nav .menu li a:hover {
+          background-color: #555;
+        }
+
+
+
+
+      #home{
+         
+        background-color: black;
+        height: 100%;
+        align-items: center;
+        padding: 0 10%;
+        grid-area: home;
+        padding: var(--main-padding);
+      
+      }
+      .home-c {
+        max-width: 600px;
+      }
+      .home-c h1{
+        color:white;
+        font-size: 60px;
+        font-weight:700;
+      }
+      .home-c h3{
+        font-size: 32px;
+        font-weight: 700;
+        color:#ff598d;
+      }
+      .home-c p{
+        color:white;
+      }
+      #mypicture{
+        height: 70%;
+        width:30%;
+        align-items: center;
+        position: absolute;
+        right: 10%;
+      }
+      #about{
+        background-color: white;
+        max-width: auto;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        grid-area: about;
+        padding: var(--main-padding);
+      }
+      #about h1 {
+        color:black;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      #about p {
+        font-size: 1.1rem;
+        color: black;
+      }
+      #certifications{
+           background-color: black;
+           color:white;
+           max-width: auto;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+           grid-area: certifications;
+           padding: var(--main-padding);
+      }
+      #mypicture2{
+        height: 30%;
+        width:25%;
+      }
+      #certifications h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .cert-item {
+        margin-bottom: 2rem;
+      }
+      .cert-item h3 {
+        color:#ff598d;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .cert-item p {
+        color: white;
+        font-size: 1.125rem;
+        
+      }
+      
+      #Experience{
+        background-color: white;
+           color:white;
+           max-width: auto;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+          grid-area: Experience;
+          padding: var(--main-padding);
+      }
+      #Experience h2 {
+        align-items: center;
+        color: black;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .experience-item1 {
+        background-color:#355e3b;
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+       
+      .experience-item1 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item1 h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item1 h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:white;
+      }
+      
+      .experience-item1 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      
+      .experience-item2 {
+        color:black;
+        margin-bottom: 2rem;
+      }
+      
+      .experience-item2 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item2 h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item2 h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:white;
+      }
+      
+      .experience-item2 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: black;
+      }
+      
+      .experience-item3 {
+        background-color:#D3A121;
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+      .experience-item3 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item3 h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .experience-item3 h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:white;
+      }
+      
+      .experience-item3 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      #project{
+        background-color: black;
+        color:white;
+        max-width: auto;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        grid-area: project;
+        padding: var(--main-padding);
+    }
+    #project h2 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .project-item1 {
+        background-color:#355e3b;
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+       
+      .project-item1 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+   
+      .project-item1 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      
+      .projecte-item2 {
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+      .project-item2 h3 {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      
+      
+      
+      .project-item2 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      
+      .project-item3 {
+        background-color:#D3A121;
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+      .project-item3 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      
+      .project-item3 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      #blog {
+        background-color: black;
+        color:white;
+        max-width: auto;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        grid-area: blog;
+        padding: var(--main-padding);
+      }
+      
+      #blog h2 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .blog-item1 {
+        background-color:#355e3b;
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+       
+      .blog h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .blog h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .blog h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:white;
+      }
+      
+      .blog-item1 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      
+      .blog-item2 {
+        color:white;
+        margin-bottom: 2rem;
+      }
+      
+      .blog-item2 h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .blog-item2 h4 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .blog-item2 h5 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color:white;
+      }
+      
+      .blog-item2 p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: white;
+      }
+      #contact{
+        background-color: #c06240;
+        color:aliceblue;
+     
+        text-align: center;
+        max-width: 1130px;
+        margin:auto;
+        grid-area: footer;
+        padding: var(--main-padding);
+      }
+      h1 {
+  
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+      h1 span {
+        font-size: 1.5rem;
+      }
+      
+      .contact-info {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+      }
+      
+      .contact-info p {
+       
+        flex-basis: 30%;
+        margin: 0.5rem;
+        text-align: left;
+      }
+      
+      .contact-info a {
+        color: black;
+      }
+      
+      
+     
+      footer{
+        background-color: #24262b;
+        text-align: center;
+        grid-area: footer;
+        padding: var(--main-padding);
+    
+    }
+       footer h4{
+       font-size: 18px;
+       color: #ffffff;
+       text-transform: capitalize;
+       margin-bottom: 35px;
+       font-weight: 500;
+       position: relative;
+       }
+       footer li a{
+       font-size: 16px;
+       text-transform: capitalize;
+       color: #ffffff;
+       text-align: center;
+       font-weight: 300;
+       color: #bbbbbb;
+       }
+       footer .social-links a{
+       display: inline-block;
+       height: 40px;
+       width: 40px;
+       background-color: rgba(255,255,255,0.2);
+       margin:0 10px 10px 0;
+       text-align: center;
+       line-height: 40px;
+       border-radius: 50%;
+       color: #ffffff;
+       transition: all 0.5s ease;
+       }
+       footer .social-links a:hover{
+       color: #24262b;
+       background-color: #ffffff;
+       }
+      
+      /*mobile layout*/
+      @media only screen and (max-width:500px)
+      {
+          .container{
+              display: grid;
+          height: 100vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      
+          grid-template-areas:
+          "home "
+          "about "
+          "certifications"
+          "Experience"
+          "project"
+          "blog"
+          "contact"
+          "footer";
+          grid-gap:0.5rem;
+          }
+          #mypicture{
+            display:none;
+          }
+          footer{
+            display:none;
+          }
+      }
+    </style>
+</head>
+
+<body>
+     <div class="container">
+        <nav>
+            <a href="#" class="logo">YAT718!</a>
+             <ul class="menu">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#exp">Experience</a></li>
+                 <li><a href="#pro">Projects</a></li>
+                 <li><a href="#con">Contact Us</a></li>
+             </ul>
+        </nav>
+<section id="home"> 
+    <img id="mypicture" src="https://github.com/chandu817/portfolio-/blob/main/image3.jpg?raw=true" >
+    <div id='home' class="home-c">
+        
+        <h1>Yateesh chandra Popuri</h1>
+        <h3>Frontend Developer &</h3>
+        <h3>DevOps engineer</h3>
+        <h4>My Skills:</h4>
+        <p>Languages:C,C++,Java,xxx,xxxx</p>
+        <p>Tools/Frame works:MySql,xxx,xxxx,xx</p>
+        <p>Platforms:Visuval Studio,xxx,xxxx</p>
+    </div>
+</section>
+
+<summary id="about"> 
+    <summary class="about-t">
+        <h1>About Me</h1>
+        <p>
+            We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+    </summary>
+</summary>
+<section id="certifications"> 
+    <h2>Certifications</h2>
+    <article class="cert-item">
+        <img id="mypicture2" src="https://media.istockphoto.com/id/1400087189/photo/top-quality-service-guarantee-and-iso-certification-and-standardization-idea-emblazoned-on.jpg?b=1&s=612x612&w=0&k=20&c=J9oQmc5lXWioYigNGiAqFDBVWwOQhpQOOU2P7oNczYs=" >
+      <header>
+        <h3>Certification 1</h3>
+    </header>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </article>
+    <div class="cert-item">
+        <img id="mypicture2" src="https://media.istockphoto.com/id/1400087189/photo/top-quality-service-guarantee-and-iso-certification-and-standardization-idea-emblazoned-on.jpg?b=1&s=612x612&w=0&k=20&c=J9oQmc5lXWioYigNGiAqFDBVWwOQhpQOOU2P7oNczYs=" >
+        <header>
+            <h3>Certification 2</h3>
+        </header>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="cert-item">
+        <img id="mypicture2" src="https://media.istockphoto.com/id/1400087189/photo/top-quality-service-guarantee-and-iso-certification-and-standardization-idea-emblazoned-on.jpg?b=1&s=612x612&w=0&k=20&c=J9oQmc5lXWioYigNGiAqFDBVWwOQhpQOOU2P7oNczYs=" >
+        <header>
+            <h3>Certification 3</h3>
+        </header>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+          lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+          anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+</section>
+<section id="Experience"> 
+    <h2>Experience</h2>
+        <div id='exp' class="experience-item1">
+          <img id="mypicture2" src="https://st.depositphotos.com/1038076/4600/i/450/depositphotos_46006685-stock-photo-experience.jpg" >
+          <h3>Software Developer</h3>
+          <h4>Intern</h4>
+          <h5>ETAB Tech Solutions</h5>
+          <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div class="experience-item2">
+          <img id="mypicture2" src="https://st.depositphotos.com/1038076/4600/i/450/depositphotos_46006685-stock-photo-experience.jpg" >
+          <h3>Student Peer Mentor</h3>
+          <h4>KL University</h4>
+          <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div class="experience-item3">
+          <img id="mypicture2" src="https://st.depositphotos.com/1038076/4600/i/450/depositphotos_46006685-stock-photo-experience.jpg" >
+          <h3>Graduate Trainee</h3>
+          <h4>S&M Scholarly Solutions Publish</h4>
+          <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+            lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+</section>
+<section  id="project">
+    <h2>Project</h2>
+    <div id='pro' class="project-item1">
+      <img id="mypicture2" src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg" >
+      <h3>Project 1</h3>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="project-item2">
+      <img id="mypicture2" src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg" >
+      <h3>Project 2</h3>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="project-item3">
+      <img id="mypicture2" src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg" >
+      <h3>Project 3</h3>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+  </section>
+  <section  id="blog">
+    <h2>Blogs / Research Papers</h2>
+    <div  class="blog-item1">
+      <img id="mypicture2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRV9y2bpF3e8UEA6Ewx6J-sBxQwSEK2gWWO6Jcyf6aw&s" >
+      <h3>Blog/Research Paper1</h3>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="blog-item2">
+      <img id="mypicture2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRV9y2bpF3e8UEA6Ewx6J-sBxQwSEK2gWWO6Jcyf6aw&s" >
+      <h3>Blog/Research Paper2</h3>
+      <p>We have created a fictional band website. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul
+        lamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+  </section>
+  <section id='contact'>
+      <h1>Contact Me </h1>
+      <div class="contact-info">
+          <p>Drop me a line <br>Email: <a href="mailto:yateesh718@gmail.com">yateesh718@gmail.com</a></p>
+          <p>+1 203-XXX-XXXX <br>WhatsApp: <a href="https://wa.me/1203XXXXXXX">+1 203 XXX XXXX</a></p>
+          <p>Phone: <a href="tel:+1203XXXXXXX">+1 203 XXX XXXX</a></p>
+      </div>
+  </div>
+  </section>
+<footer> 
+         <h4>Forther contacts</h4>
+         <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+ </footer>
+
+</body>
+</html>
